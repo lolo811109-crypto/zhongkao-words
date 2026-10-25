@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0D1120" />
+    <meta name="twitter:title" content="词光 · 一词一画，点亮中考" />
+    <meta name="twitter:image" content="brand/og-card.jpg" />
+    <title>词光 Word Atlas · 一词一画，点亮中考</title>
+    <meta name="description" content="1,722 个上海中考英语考纲词汇，英美发音。学会一个，就点亮一颗星。免费、开源、无需注册。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="词光 · 一词一画，点亮中考" />
+    <meta property="og:description" content="7,298 个中考词，每个都有一幅画。学会一个，就点亮一颗星。免费、开源、无需注册。" />
+    <meta property="og:image" content="brand/og-card.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/zhongkao-words/favicon.svg" />
+    <link rel="apple-touch-icon" href="/zhongkao-words/icon-512.png" />
+    <link rel="manifest" href="/zhongkao-words/manifest.webmanifest" />
+    <link rel="preload" href="/zhongkao-words/atlas/index.json" as="fetch" crossorigin="anonymous" />
+    <script>
+      // Apply the saved theme (dark by default) before first paint.
+      (function () {
+        var t = "dark";
+        try {
+          var s = JSON.parse(localStorage.getItem("word-atlas:settings") || "{}");
+          if (s.theme) t = s.theme;
+        } catch (e) {}
+        if (t !== "system") document.documentElement.setAttribute("data-theme", t);
+      })();
+    </script>
+    <script type="module" crossorigin src="/zhongkao-words/assets/index-gwXH4PTY.js"></script>
+    <link rel="stylesheet" crossorigin href="/zhongkao-words/assets/index-CEqYCcPF.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
